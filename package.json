@@ -4,6 +4,9 @@
   "devDependencies": {
     "standard-changelog": "1.0.0"
   },
+  "bin": {
+    "print-pkg-version": "./index.js"
+  },
   "scripts": {
     "release": "standard-changelog && git commit -a -m 'chore: release `node .`' && git push origin master --tags && npm publish"
   }
