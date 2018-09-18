@@ -1,0 +1,10 @@
+{
+  "name": "print-pkg-version",
+  "version": "0.1.0",
+  "devDependencies": {
+    "standard-changelog": "1.0.0"
+  },
+  "scripts": {
+    "release": "standard-changelog && git commit -a -m 'chore: release `node .`' && git push origin master --tags && npm publish"
+  }
+}
