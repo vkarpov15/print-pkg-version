@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log(require(`${__dirname}/package.json`).version);
+console.log(require(`${process.cwd()}/package.json`).version);
